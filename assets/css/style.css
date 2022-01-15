@@ -59,11 +59,6 @@ nav ul li .underline::after{
 nav li a:hover ~ .underline::after{
     transform: scaleX(1);
 }
-.menuMobile{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 /* PRODUTO */
 
@@ -437,6 +432,7 @@ input[type="submit"]:hover{
     }
     .mm_line{
         height: 3px;
+        margin-bottom: 10px;
         background-color: #ffffff;
     }
 
@@ -460,11 +456,28 @@ input[type="submit"]:hover{
         margin-left: 40px;
     }
     .menu{
+        
+    }
+    .menu ul{
         display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #074111;
+        opacity: 0.95;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        height: 450px;
+        width: 425px;
     }
     .menuMobile{
         display: block;
         flex-direction: column;
+        margin: 0;
+    }
+    .menu ul li{
+        padding: 20px 0 5px 0;
+        opacity: 1;
     }
     .produto_img{
         width: 180px;
