@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display ='none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            })
+        };
+    </script>
     <title>Óleo de Rosa Mosqueta | Lenharo</title>
 </head>
 <body>
@@ -20,6 +30,11 @@
                 </div>
                 <div class="menu">
                     <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
                         <ul>
                             <li><a href="http://" target="_blank" rel="noopener noreferrer">ÍNICIO</a><div class="underline"></div></li>
                             <li><a href="http://" target="_blank" rel="noopener noreferrer">MINHA CONTA</a><div class="underline"></div></li>
@@ -237,7 +252,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Desenvolvedor Henderson Abreu &copy</p>
+                <p>Desenvolvedor Henderson Abreu &copy 2022</p>
             </div>
         </div>
     </footer>

@@ -59,6 +59,11 @@ nav ul li .underline::after{
 nav li a:hover ~ .underline::after{
     transform: scaleX(1);
 }
+.menuMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 /* PRODUTO */
 
@@ -225,6 +230,9 @@ input{
     border-radius: 4px;
     outline: none;
     border: none;
+}
+input::placeholder{
+    text-align: center;
 }
 form input:last-child{
     margin-top: 10px;
