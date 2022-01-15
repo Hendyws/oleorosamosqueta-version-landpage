@@ -65,13 +65,13 @@ nav li a:hover ~ .underline::after{
 .bg_produto{
     background-image: url(../images/bg_pri.png);
     background-size: cover;
-    height: 650px;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
 .container_produto{
     width: 900px;
-    margin-top: 130px;
+    margin-top: 155px;
     display: flex;
 }
 .produto_img img{
