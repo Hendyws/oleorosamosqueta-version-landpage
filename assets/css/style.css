@@ -292,7 +292,7 @@ input[type="submit"]:hover{
 
 /* TABLET 768 */
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     .top,
     .container_produto,
     .container_info,
@@ -311,7 +311,10 @@ input[type="submit"]:hover{
         width: 40px;
     }
     .bg_produto{
-        height: 540px;
+        height: 100vh;
+    }
+    .container_produto{
+        margin-top: 125px;
     }
     .container_info,
     .container_planta
@@ -322,7 +325,7 @@ input[type="submit"]:hover{
     .oleo img,
     .planta img,
     .rosa img{
-        width: 330px;
+        width: 400px;
         height: auto;
         margin: 20px 0;
     }
@@ -332,9 +335,18 @@ input[type="submit"]:hover{
         display: flex;
         justify-content: center;
     }
+    .info_oleo{
+        margin-top: 20px;
+    }
     .planta,
     .info_rosa{
         order: 1;
+    }
+    .info_usar{
+        margin: 0;
+    }
+    .info_usar ul{
+        padding: 0;
     }
     .container_rosa{
         flex-direction:column;
@@ -350,7 +362,7 @@ input[type="submit"]:hover{
         display: flex;
         justify-content: start;
         flex-direction: row;
-        padding: 5px;
+        padding: 20px 0;
     }
     .container_informacoes ul{
         display: flex;
@@ -428,7 +440,6 @@ input[type="submit"]:hover{
         display: none;
         width: 40px;
         height: 40px;
-        margin: 40px 20px 40px 0;
     }
     .mm_line{
         height: 3px;
@@ -452,6 +463,9 @@ input[type="submit"]:hover{
     .container_footer{
         width: 390px;
     }
+    .container_top{
+        height: 95px;
+    }
     .logo{
         margin-left: 40px;
     }
@@ -466,27 +480,44 @@ input[type="submit"]:hover{
         opacity: 0.95;
         position: absolute;
         right: 0;
-        top: 100px;
-        height: 450px;
-        width: 425px;
+        top: 87px;
+        height: calc(100vh - 95px);
+        width: 100%;
     }
     .menuMobile{
         display: block;
         flex-direction: column;
-        margin: 0;
+        margin-right: 15px;
     }
     .menu ul li{
         padding: 20px 0 5px 0;
         opacity: 1;
     }
+    .logo{
+        margin-left: 27px;
+    }
+    .logo img{
+        width: 44px;
+    }
+    .container_produto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 75px;
+    }
+    .produto_text{
+        justify-content: center;
+        align-items: center;
+    }
     .produto_img{
-        width: 180px;
+        width: 155px;
     }
     .produto_img img{
         width: inherit;
     }
     .title_produto{
         font-size: 20px;
+        text-align: center;
     }
     .light_descr{
         font-size: 13px;
@@ -503,6 +534,7 @@ input[type="submit"]:hover{
     .descr{
         font-size: 13px;
         line-height: 1.1rem;
+        text-align: center;
     }
     .oleo img,
     .planta img,
@@ -593,5 +625,23 @@ input[type="submit"]:hover{
     .container_pgta{
         display: block;
         margin-top: 10px;
+    }
+}
+
+/* MOBILE 320PX */
+
+
+@media screen and (max-width: 320px) {
+    .top,
+    .container_produto,
+    .container_info,
+    .container_planta,
+    .info_usar,
+    .container_rosa,
+    .container_footer{
+        width: 320px;
+    }
+    .menuMobile{
+        margin-right: 20px;
     }
 }
