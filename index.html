@@ -8,23 +8,12 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <script type="text/javascript">
-        window.onload = function(){
-            document.querySelector(".menuMobile").addEventListener("click", function(){
-                if(document.querySelector(".menu nav ul").style.display == 'flex') {
-                    document.querySelector(".menu nav ul").style.display ='none';
-                } else {
-                    document.querySelector(".menu nav ul").style.display = 'flex';
-                }
-            })
-        };
-    </script>
     <title>Óleo de Rosa Mosqueta | Lenharo</title>
 </head>
 <body>
     <header>
         <div class="container_top">
-            <div class="top">
+            <div class="top" data-animate="down">
                 <div class="logo">
                     <img src="assets/images/logo_lenharo.png" alt="Lenharo" title="Lenharo" srcset="">
                 </div>
@@ -48,11 +37,11 @@
         </div>
     </header>
     <section class="bg_produto">
-        <div class="container_produto">
-            <div class="produto_img">
+        <div class="container_produto" >
+            <div class="produto_img" data-animate="left">
                 <img src="assets/images/oleo_rm.png" alt="oleo_rosa_mosqueta" title="Óleo de Rosa Mosqueta" srcset="">
             </div>
-            <div class="produto_text">
+            <div class="produto_text" data-animate="right">
                 <div class="title_produto">
                     Óleo Vegetal Rosa Mosqueta
                 </div>
@@ -82,7 +71,7 @@
     <section class="info_all">
         <div class="info">
             <div class="container_info">
-                <div class="info_oleo">
+                <div class="info_oleo" data-animate="right">
                     <p>
                         O óleo de rosa de mosqueta é um óleo obtido a partir das sementes da planta silvestre rosa mosqueta que é 
                         rico em ácidos graxos, como o ácido linoleico, além de vitamina A e alguns compostos cetônicos que possuem
@@ -90,15 +79,15 @@
                         de expressão.
                     </p>
                 </div>
-                <div class="oleo">
+                <div class="oleo" data-animate="left">
                     <img src="assets/images/oleo.jpg" alt="Oleo" title="Óleo de rosa mosqueta puro." srcset="">
                 </div>
             </div>
             <div class="container_planta">
-                <div class="planta">
+                <div class="planta" data-animate="right">
                     <img src="assets/images/planta.jpg" alt="Planta" title="Planta da Rosa Mosqueta" srcset="">
                 </div>
-                <div class="info_planta">
+                <div class="info_planta" data-animate="left">
                     <p>
                         O óleo de rosa mosqueta é especialmente indicado para pele muito seca e áspera, 
                         já que é rico em ácido oleico e linoleico e vitamina A, possuindo efeito regenerador 
@@ -110,7 +99,7 @@
     </section>
     <section class="info_rosa_mosqueta">
         <div class="info">
-                <div class="info_usar">
+                <div class="info_usar" data-animate="up">
                     <ul>
                         <li>Tratamento de queimaduras;</li>
                         <li>Cicatrização de suturas;</li>
@@ -124,10 +113,10 @@
                     </ul>
                 </div>
             <div class="container_rosa">
-                <div class="rosa">
+                <div class="rosa" data-animate="right">
                     <img src="assets/images/flor.jpg" alt="Rosa_Mosqueta" title="Rosa Mosqueta" srcset="">
                 </div>
-                <div class="info_rosa">
+                <div class="info_rosa" data-animate="left">
                     <p>
                         O óleo de rosa mosqueta é especialmente indicado para pele muito seca e áspera, 
                         já que é rico em ácido oleico e linoleico e vitamina A, possuindo efeito regenerador 
@@ -140,7 +129,7 @@
     <footer>
         <div class="info_footer">
             <div class="container_footer">
-                <div class="informacoes">
+                <div class="informacoes" data-animate="up" >
                     <div class="title_informacoes">
                         Informações
                     </div>
@@ -163,7 +152,7 @@
                         <img src="assets/images/twitter-sign.png" alt="">
                     </div>
                 </div>
-                <div class="newsletter">
+                <div class="newsletter" data-animate="up" >
                     <div class="title_newsletter">
                         Newsletter
                     </div>
@@ -179,7 +168,7 @@
                         <img src="assets/images/ONG_OPAA.png" alt="">
                     </div>
                 </div>
-                <div class="atendimento">
+                <div class="atendimento" data-animate="up" >
                     <div class="title_atendimento">
                         Atendimento
                     </div>
@@ -239,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pgta">
+                <div class="pgta" data-animate="up" >
                     <div class="title_pgta">
                         Formas de<br> Pagamento
                     </div>
@@ -256,5 +245,6 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
