@@ -314,7 +314,7 @@ input[type="submit"]:hover{
 
 /* TABLET 768 */
 
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     .top,
     .container_produto,
     .container_info,
@@ -475,7 +475,7 @@ input[type="submit"]:hover{
 
 
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
     .top,
     .container_produto,
     .container_info,
@@ -483,7 +483,7 @@ input[type="submit"]:hover{
     .info_usar,
     .container_rosa,
     .container_footer{
-        width: 390px;
+        width: 91.76%;
     }
     .container_top{
         height: 95px;

@@ -9,7 +9,6 @@ window.onload = function(){
       }
   })
 };
-
 const debounce = function (func, wait, immediate) {
   let timeout;
   return function (...args) {
