@@ -491,20 +491,18 @@ input[type="submit"]:hover{
     .logo{
         margin-left: 40px;
     }
-    .menu{
-        
-    }
     .menu ul{
-        display: none;
+        /* display: none; */
         flex-direction: column;
         text-align: center;
         background-color: #074111;
-        opacity: 0.95;
+        opacity:0;
         position: absolute;
         right: 0;
         top: 87px;
         height: calc(100vh - 95px);
         width: 100%;
+        transition: all .5s ease-in-out;
     }
     .menuMobile{
         display: block;
@@ -526,6 +524,8 @@ input[type="submit"]:hover{
         justify-content: center;
         align-items: center;
         margin-top: 75px;
+        opacity: 1;
+        transition: all .5s ease-in-out;
     }
     .produto_text{
         justify-content: center;
