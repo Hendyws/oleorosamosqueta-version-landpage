@@ -674,9 +674,7 @@ input[type="submit"]:hover{
     .menuMobile{
         margin-right: 20px;
     }
-    .bg_produto{
-        width: auto;
-        overflow-x: hidden;
-        overflow-y: scroll;
+    .container_produto{
+        justify-content:initial;
     }
 }
