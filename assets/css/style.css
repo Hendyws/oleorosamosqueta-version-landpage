@@ -9,10 +9,6 @@
 html{
     overflow-x: hidden;
 }
-
-body{
-    overflow-x: hidden;
-}
 .container_top{
     position: absolute;
     height: 100px;
@@ -319,6 +315,25 @@ input[type="submit"]:hover{
     opacity: 1;
     transform: translate3d(0,0,0);
 }
+.up{
+    width:0;
+    height:0;
+    border-radius: 7px;
+    border: 20px solid;
+    border-color: transparent transparent #0a5216 transparent;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0 50px 50px 0;
+    animation: is-bouncing 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) alternate infinite;
+    cursor: pointer;
+    display: none;
+}
+@keyframes is-bouncing {
+    to {
+        transform: translateY(-30px);
+    }
+}
 
 /* TABLET 768 */
 
@@ -484,14 +499,13 @@ input[type="submit"]:hover{
 
 
 @media (max-width: 425px) {
-    .top,
     .container_produto,
     .container_info,
     .container_planta,
     .info_usar,
     .container_rosa,
     .container_footer{
-        max-width: 100%;
+        width: auto;
     }
     .container_top{
         height: 95px;
@@ -658,7 +672,7 @@ input[type="submit"]:hover{
     }
 }
 
-/* MOBILE 320PX */
+/* MOBILE 360PX */
 
 
 @media (max-width: 360px) {
