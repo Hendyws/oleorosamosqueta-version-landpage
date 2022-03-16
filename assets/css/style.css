@@ -6,7 +6,9 @@
 }
 
 /* MENU E LOGO */
-
+html{
+    overflow-x: hidden;
+}
 
 body{
     overflow-x: hidden;
@@ -69,6 +71,7 @@ nav li a:hover ~ .underline::after{
 .bg_produto{
     background-image: url(../images/bg_pri.png);
     background-size: cover;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -327,7 +330,7 @@ input[type="submit"]:hover{
     .info_usar,
     .container_rosa,
     .container_footer{
-        width: 668px;
+        max-width: 678px;
     }
     .menu nav ul li a{
         font-size: 13px;
@@ -488,7 +491,7 @@ input[type="submit"]:hover{
     .info_usar,
     .container_rosa,
     .container_footer{
-        width: 91.76%;
+        max-width: 100%;
     }
     .container_top{
         height: 95px;
@@ -658,7 +661,7 @@ input[type="submit"]:hover{
 /* MOBILE 320PX */
 
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .top,
     .container_produto,
     .container_info,
@@ -666,9 +669,14 @@ input[type="submit"]:hover{
     .info_usar,
     .container_rosa,
     .container_footer{
-        width: 320px;
+        max-width: 320px;
     }
     .menuMobile{
         margin-right: 20px;
+    }
+    .bg_produto{
+        width: auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 }
