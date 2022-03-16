@@ -343,7 +343,7 @@ input[type="submit"]:hover{
         width: 100%;
     }
     .top{
-        width: 80%;
+        width: 90%;
     }
     .container_produto,
     .container_info,
@@ -692,14 +692,16 @@ input[type="submit"]:hover{
 
 
 @media (max-width: 360px) {
-    .top,
     .container_produto,
     .container_info,
     .container_planta,
     .info_usar,
     .container_rosa,
     .container_footer{
-        max-width: 320px;
+        width: 320px;
+    }
+    .container_top .top{
+        width: 90%;
     }
     .menuMobile{
         margin-right: 20px;
