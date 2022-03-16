@@ -6,7 +6,8 @@
 }
 
 /* MENU E LOGO */
-html{
+html,
+body{
     overflow-x: hidden;
 }
 .container_top{
@@ -324,7 +325,7 @@ input[type="submit"]:hover{
     position: fixed;
     right: 0;
     bottom: 0;
-    margin: 0 50px 50px 0;
+    margin: 0 20px 25px 0;
     animation: is-bouncing 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) alternate infinite;
     cursor: pointer;
     display: none;
@@ -338,14 +339,22 @@ input[type="submit"]:hover{
 /* TABLET 768 */
 
 @media (max-width: 768px){
-    .top,
+    .container_top{
+        width: 100%;
+    }
+    .top{
+        width: 80%;
+    }
     .container_produto,
     .container_info,
     .container_planta,
     .info_usar,
     .container_rosa,
     .container_footer{
-        max-width: 678px;
+    width: 80%;
+    }
+    .menu nav ul{
+        padding: 0;
     }
     .menu nav ul li a{
         font-size: 13px;
@@ -491,7 +500,10 @@ input[type="submit"]:hover{
         margin-bottom: 10px;
         background-color: #ffffff;
     }
-
+    .up{
+        margin: 0 20px 25px 0;
+        border-width: 18px solid;
+    }
 }
 
 /* MOBILE 425 */
@@ -505,7 +517,7 @@ input[type="submit"]:hover{
     .info_usar,
     .container_rosa,
     .container_footer{
-        width: auto;
+        width: 100%;
     }
     .container_top{
         height: 95px;
@@ -669,6 +681,10 @@ input[type="submit"]:hover{
     .container_pgta{
         display: block;
         margin-top: 10px;
+    }
+    .up{
+        margin: 0 20px 25px 0;
+        border-width: 5px solid;
     }
 }
 
