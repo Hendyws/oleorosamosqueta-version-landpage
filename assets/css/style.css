@@ -6,8 +6,7 @@
 }
 
 /* MENU E LOGO */
-html,
-body{
+html{
     overflow-x: hidden;
 }
 .container_top{
