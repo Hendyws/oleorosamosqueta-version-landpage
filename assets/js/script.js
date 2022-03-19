@@ -43,6 +43,7 @@ if(target.length) {
   }, 200));
 }
 
+
 function upscreen() {
   window.scrollTo({
       top:0,
@@ -59,3 +60,12 @@ function scrollbutton() {
   }
 }
 window.addEventListener('scroll',scrollbutton);
+
+// MENU MOBILE
+
+const btnMenu = document.querySelector('.btn-menu');
+function toggleMenu () {
+    const navMenu = document.querySelector('.menu');
+    navMenu.classList.toggle('active');
+}
+btnMenu.addEventListener('click', toggleMenu);
