@@ -761,7 +761,9 @@ input[type="submit"]:hover{
 
 @media (max-width: 360px) {
 
-    
+    .top{
+        height: 90px;
+    }
     .menu-interation{
         display: block;
         width: 40px;
@@ -797,8 +799,8 @@ input[type="submit"]:hover{
         width: 100vw;
         position: absolute;
         z-index: 1000;
-        background-color: rgba(75, 113, 82, 0.5);
-        top: 100px;
+        background-color: rgba(75, 113, 82, 0.9);
+        top: 90px;
         right: 0;
         transition: .6s;
         visibility: hidden;
@@ -848,6 +850,9 @@ input[type="submit"]:hover{
     }
     .container_produto{
         justify-content:initial;
+    }
+    .produto_img{
+        margin-top: 20px;
     }
     .info_all .title_produto{
         padding: 10px 0 10px 0;
